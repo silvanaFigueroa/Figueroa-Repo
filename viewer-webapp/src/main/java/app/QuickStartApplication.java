@@ -60,8 +60,7 @@ public class QuickStartApplication extends IsisWicketApplication {
         
         final Module quickstartOverrides = new AbstractModule() {
             @Override
-            protected void configure()
-            {
+            protected void configure() {
                 bind(ComponentFactoryRegistrar.class).to(ComponentFactoryRegistrarForQuickStart.class);
                 
                 bind(String.class).annotatedWith(Names.named("applicationName")).toInstance("Quick Start App");
