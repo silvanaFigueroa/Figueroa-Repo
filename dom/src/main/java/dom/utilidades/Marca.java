@@ -79,25 +79,25 @@ public class Marca
 		this.nombre=nombre;
 	}
 	
-	//METODO RECOLECTA DATOS DEL SERVICIO
 	
-//	private AutoServicio toDoItems;
-//	
-//	@MemberOrder(sequence = "5")
-//	 @NotPersisted
-//	 
-//	 
-//	 public List<Auto> getAutos() 
-//	 {
-//	  
-//	
-//	  
-//	  }
-//
-//	public void setToDoItems(final AutoServicio toDoItems) 
-//    {
-//        this.toDoItems = toDoItems;
-//    }
+	
+	private UtilidadesServicio itemsAutos;
+	
+	@MemberOrder(sequence = "5")
+	 @NotPersisted
+	 
+	 
+	 public List<Auto> AutosCargados() 
+	 {
+	  
+	     return itemsAutos.AutosCargados(this);
+	  
+	  }
+
+	public void setToDoItems(final UtilidadesServicio toDoItems) 
+    {
+        this.itemsAutos = toDoItems;
+    }
 
 	
 	
